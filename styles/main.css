@@ -25,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -58,9 +58,38 @@ footer {
   padding: 10px;
 }
 
+p {
+  padding: 0px;
+  margin: 0px;
+}
 
+/* Specific Changes */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Blurb */
+.blurb-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurb-header {
+  padding: 0px;
+  margin: 0px;
+}
+
+.blurb-content {
+  background-color: #b0dcff;
+  padding: 10px;
+  margin: 5px;
+}
 
 
 
