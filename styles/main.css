@@ -81,6 +81,7 @@ p {
   justify-content: center;
   align-items: center;
   margin: 20px 20px 60px 20px;
+  max-width: 1400px;
 }
 
 .blurb-header {
