@@ -114,13 +114,26 @@ p {
 }
 
 .blog-content {
-  background-color: #ffd4b0;
   border-radius: 10px;
   padding: 10px;
   margin: 0px;
 }
 
+.style-1 {
+  background-color: #ffd4b0;
+}
 
+.style-2 {
+  background-color: #b0ffd1;
+}
+
+.style-3 {
+  background-color: #ffb0b0;
+}
+
+.style-4 {
+  background-color: #b0dbff;
+}
 
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
