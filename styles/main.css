@@ -25,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 5px;
 }
 
@@ -139,10 +139,17 @@ p {
 
 /* Technical CSS HTML */
 .technical-summary {
+  background-color: #ffd0b0;
+  border-radius: 10px;
+  padding: 20px 20px 40px 20px;
+  margin: 20px 20px 40px 20px;
   max-width: 1200px;
 }
 
 .technical-blurb {
+  background-color: #ffd0b0;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
   max-width: 800px;
 }
 
