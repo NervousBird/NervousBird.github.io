@@ -44,12 +44,15 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--color-light-pink);
-  padding: 15px;
+  padding: 5px;
 }
 
 nav img {
-  width: 80px;
+  width: 50px;
+  /* padding: -30px; */
+
 }
 
 header {
