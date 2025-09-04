@@ -7,6 +7,15 @@
   <title>HTML-CSS Blog</title>
 </head>
 <body>
+  <nav>
+    <img />
+    <div>
+      <a href="#">Blog 1</a>
+      <a href="#">Blog 2</a>
+      <a href="#">Blog 3</a>
+    </div>
+    <a href="#">Temp</a>
+  </nav>
   <header>
     <h1>Technical Blog</h1>
   </header>
@@ -16,19 +25,19 @@
       <h3>Summary</h3>
       <p>Relative, absolute, and fixed positioning are all ways that CSS can tell the web browser how to place the element on the screen. This is especially useful for creating a good layout for your webpage, or positioning sub-UI (dropdown menus, etc).</p>
     </section>
-    <section class="technical-blurb">
+    <section class="technical-blurb style-1">
       <h4>Relative</h4>
       <p>An element with the "relative" position, will be placed relative to it's default position. When using "top, right, left, bottom", the element will change position relative to it's original. Other content will not be affected by this, so you don't haveto worry about elements stretching or shrinking to fill the gap with a flexbox or grid.</p>
       <img >
       <p>Placeholder</p>
     </section>
-    <section class="technical-blurb">
+    <section class="technical-blurb style-2">
       <h4>Absolute</h4>
       <p>Absolute will place the element relative to the viewscreen, until the element has specified specific numbers for top, right, bottom, or left, the element will default to 0,0, relative to it's container. Containers holding elements with the absolute position, will ignore it within it's layout, and the element will have affect on other layout at all.</p>
       <img>
       <p>Placeholder</p>
     </section>
-    <section class="technical-blurb">
+    <section class="technical-blurb style-3">
       <h4>Fixed</h4>
       <p>Fixed positioning is a weird one. The element will behave as if it has the "relative" property, but will "fix" itself to the screen during scrolling, allowing the element to always stay in view. It will appear in front of, or behind other elements depending on the html hierarchy, as is default.</p>
       <img>
