@@ -7,12 +7,12 @@
   --color-font: #1a1513;
   --color-light-orange: #ffe2c9;
   --color-orange: #ffbd91;
-  --color-light-pink: #ffadd3;
+  --color-light-pink: #eeb2ce;
   --color-pink: #ff93ab;
-  --color-light-blue: #b0dcff;
-  --color-blue: #71bfff;
-  --color-light-green: #b0ffd1;
-  --color-green: #72ffad;
+  --color-light-blue: #aaceeb;
+  --color-blue: #5e9cee;
+  --color-light-green: #b5e0c7;
+  --color-green: #64eb9c;
 
 }
 
@@ -161,6 +161,7 @@ section {
 }
 
 /* Technical CSS HTML */
+
 .technical-title {
   display: flex;
   flex-direction: column;
@@ -198,6 +199,24 @@ section {
   height: 120px;
   width: 150px;
   bottom: 80px;
+}
+
+.technical-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 30px;
+}
+
+.technical-content section:nth-child(odd) {
+  position: relative;
+  right: 20px;
+}
+
+.technical-content section:nth-child(even) {
+  position: relative;
+  left: 20px;
 }
 
 .technical-blurb {
