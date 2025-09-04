@@ -137,6 +137,16 @@ p {
   margin: 0px;
 }
 
+/* Technical CSS HTML */
+.technical-summary {
+  max-width: 1200px;
+}
+
+.technical-blurb {
+  max-width: 800px;
+}
+
+
 .style-1 {
   background-color: #b0dcff;
 }
