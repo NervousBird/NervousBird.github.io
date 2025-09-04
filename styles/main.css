@@ -2,6 +2,17 @@
 
 :root {
   font-family: 'Sour Gummy', sans-serif;
+  color: var(--color-font);
+
+  --color-font: #1a1513;
+  --color-light-orange: #ffe2c9;
+  --color-orange: #ffbd91;
+  --color-light-pink: #ffadd3;
+  --color-pink: #ff93ab;
+  --color-light-blue: #b0dcff;
+  --color-blue: #71bfff;
+  --color-light-green: #b0ffd1;
+  --color-green: #72ffad;
 
 }
 
@@ -33,8 +44,12 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #ffb89d;
-  padding: 10px;
+  background-color: var(--color-light-pink);
+  padding: 15px;
+}
+
+nav img {
+  width: 80px;
 }
 
 header {
@@ -42,6 +57,7 @@ header {
 }
 
 body {
+  background-color: var(--color-light-orange);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -55,7 +71,7 @@ main {
 
 footer {
   flex-shrink: 1;
-  background-color: #ffb89d;
+  background-color: var(--color-light-pink);
   padding: 10px;
 }
 
@@ -90,7 +106,7 @@ p {
 }
 
 .blurb-content {
-  background-color: #ffd0b0;
+  background-color: var(--color-orange);
   border-radius: 10px;
   padding: 10px;
   margin: 0px;
@@ -138,36 +154,82 @@ p {
 }
 
 /* Technical CSS HTML */
+.technical-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .technical-title img {
+  position: relative;
+  width: 200px;
+  top: -30px;
+} */
+
 .technical-summary {
-  background-color: #ffd0b0;
+  background-color: var(--color-orange);
   border-radius: 10px;
   padding: 20px 20px 40px 20px;
   margin: 20px 20px 40px 20px;
   max-width: 1200px;
 }
 
+.technical-summary-img {
+  display: flex;
+  justify-content: center;
+  height: 0px;
+}
+
+.technical-summary img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  width: 150px;
+  bottom: 80px;
+}
+
 .technical-blurb {
-  background-color: #ffd0b0;
+  background-color: var(--color-orange);
   border-radius: 10px;
   padding: 10px 10px 20px 10px;
   max-width: 800px;
 }
 
+.technical-blurb-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.technical-blurb img {
+  outline: 2px solid var(--color-font);
+  border-radius: 5px;
+  margin: 1rem;
+  height: auto;
+  max-width: 100%;
+}
+
 
 .style-1 {
-  background-color: #b0dcff;
+  background-color: var(--color-light-blue);
 }
 
 .style-2 {
-  background-color: #b0ffd1;
+  background-color: var(--color-light-green);
 }
 
 .style-3 {
-  background-color: #ffb0b0;
+  background-color: var(--color-light-pink);
 }
 
 .style-4 {
-  background-color: #b0dbff;
+  background-color: var(--color-light-orange);
 }
 
 /* widescreen displays */
@@ -181,6 +243,8 @@ p {
 }
   
 /* phones */
-@media only screen and (max-width: 400px) {
-    .container { /* some layout rules */ }
+@media only screen and (max-width: 450px) {
+    .technical-summary img {
+      bottom: 100px;
+    }
 }
