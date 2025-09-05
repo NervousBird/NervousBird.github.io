@@ -5,6 +5,8 @@
   color: var(--color-font);
 
   --color-font: #1a1513;
+  --color-font-light: #333130;
+  --color-font-link: #5a2035;
   --color-light-orange: #ffe2c9;
   --color-orange: #ffbd91;
   --color-light-pink: #eeb2ce;
@@ -22,7 +24,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 4rem;
-  margin: 25px;
+  margin: 30px;
 }
 
 h2 {
@@ -40,21 +42,49 @@ h4 {
   margin: 5px;
 }
 
+/* Navbar */
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-light-pink);
   padding: 5px;
+  height: 48px;
 }
 
 nav img {
+  position: absolute;
   width: 50px;
+  left: 5px;
+  top: 5px;
   /* padding: -30px; */
 
 }
 
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Gochi Hand";
+  color: var(--color-font-link);
+  font-size: 1.3rem;
+
+  /* background-color: var(--color-pink);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px; */
+}
+
+nav a:hover {
+  color: var(--color-pink);
+}
+
+
+/*  */
 header {
   text-align: center;
 }
@@ -242,6 +272,23 @@ section {
   max-width: 100%;
 }
 
+.technical-links {
+  background-color: var(--color-light-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+}
+
+.technical-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .style-1 {
   background-color: var(--color-light-blue);
@@ -261,17 +308,46 @@ section {
 
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
-    .container { /* some layout rules */ }
+  .navbar-responsive-dropdown {
+    display: none;
+  }
 }
   
 /* tablets */
 @media only screen and (max-width: 919px) {
-    .container { /* some layout rules */ }
+  .navbar-responsive-dropdown {
+    display: none;
+  }
 }
   
 /* phones */
 @media only screen and (max-width: 450px) {
-    .technical-summary img {
-      bottom: 100px;
-    }
+  .technical-summary img {
+    bottom: 100px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-dropdown-icon img {
+    
+    position: relative;
+    width: 40px;
+    left: -10px;
+    /* top: 10px; */
+  }
+  .navbar-responsive-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-responsive-dropdown ul {
+    display: none;
+  }
+  .navbar-links {
+    display: none;
+  }
 }
