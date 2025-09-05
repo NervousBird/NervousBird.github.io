@@ -1,89 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
-    <!--  -->
-    <title>Leo's Blog</title>
-  </head>
-  <body>
-    <nav>
-      <img />
-      <div>
-        <a href="#">Blog 1</a>
-        <a href="#">Blog 2</a>
-        <a href="#">Blog 3</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  <!--  -->
+  <title>Leo's Blog</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <!-- <img src="/images/icon.png"/> -->
+      <a href="/index.html"><img src="/images/icon.png"/></a>
+    </div>
+    <div class="navbar-links">
+      <a href="/blog/te-houtaewa-template.html">Te Houtaewa</a>
+      <a href="/blog/html-css.html">HTML-CSS</a>
+      <a href="/blog/identity-values.html">Identity & Values</a>
+      <a href="/blog/learning-plan.html">Learning Plans</a>
+    </div>
+    <!-- For phone -->
+    <div class="navbar-responsive-dropdown" id="responsiveDropdown">
+      <div class="navbar-dropdown-icon">
+        <img src="/images/menu.png">
       </div>
-      <a href="#">Temp</a>
-    </nav>
-    <main>
-      <header>
-        <h1>Leo's Blog</h1>
-      </header>
-      <section class="container">
-        <div class="blurb-container">
-          <h2 class="blurb-header">Blurb</h2>
-          <div class="blurb-content">
-            <p>
-              This is where a blurb will go. I'm Leo, this is my blog for the Dev Academy course. Lots of stuff will go here. I'm padding the text here just to see the styling, but I will put something more meaningful here eventually, I think there is part of a sprint to do that? I don't know, I'll update it at some point.
-            </p><br>
-            <p>Things I love: (in not particular order, don't read into it)</p>
-            <ul>
-              <li>Music</li>
-              <li>Art</li>
-              <li>Games</li>
-              <li>Design</li>
-              <li>Food</li>
-              <li>Animals</li>
-              <li>Travel</li>
-              <li>Culture</li>
-            </ul>
-          </div>
+      <ul class="dropdown-items">
+        <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
+        <li><a href="/blog/html-css.html">HTML-CSS</a></li>
+        <li><a href="/blog/identity-values.html">Identity & Values</a></li>
+        <li><a href="/blog/learning-plan.html">Learning Plans</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <header>
+      <h1>Leo's Blog</h1>
+    </header>
+    <div class="container">
+      <div class="blurb-container">
+        <h2 class="blurb-header">Blurb</h2>
+        <section class="blurb-content">
+          <p>
+            This is where a blurb will go. I'm Leo, this is my blog for the Dev Academy course.Lots of stuff will go here. I'm padding the text here just to see the styling, but Iwill put something more meaningful here eventually, I think there is part of a sprintto do that? I don't know, I'll update it at some point.
+          </p><br>
+          <p>Things I love: (in not particular order, don't read into it)</p>
+          <ul>
+            <li>Music</li>
+            <li>Art</li>
+            <li>Games</li>
+            <li>Design</li>
+            <li>Food</li>
+            <li>Animals</li>
+            <li>Travel</li>
+            <li>Culture</li>
+          </ul>
+        </section>
+      </div>
+      <a class="blog-container" href="/blog/te-houtaewa-template.html">
+        <div class="blog-header">
+          <h3 class="blog-title">Te Houtaewa</h3>
+          <h4 class="blog-date">02/09/2025</h4>
         </div>
-        <a class="blog-container" href="/blog/te-houtaewa-template.html">
-          <div class="blog-header">
-            <h3 class="blog-title">Te Houtaewa</h3>
-            <h4 class="blog-date">dd/ww/yyyy</h4>
-          </div>
-          <div class="blog-content style-1">
-            <p>
-              The Story of Te Houtaewa<br />Te Houtaewa was the fastest runner
-              of his day and playedmany pranks on his peoples enemies. One
-              morning his mother wanted kumara for the hangi(earth oven) and
-              asked Te Houtaewa to go to the gardens at Te Kao, a short
-              distanceaway. He agreed to fetch the kumara and told his mother to
-              prepare the hangi.
-            </p>
-          </div>
-        </a>
-        <a class="blog-container" href="#">
-          <div class="blog-header">
-            <h3 class="blog-title">Reflections</h3>
-            <h4 class="blog-date">dd/ww/yyyy</h4>
-          </div>
-          <div class="blog-content style-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat cupiditate dolorum aliquam dolore! Expedita provident quibusdam amet ab quas aut fugit eveniet praesentium velit dolores ex harum eligendi, perspiciatis deleniti.
-            </p>
-          </div>
-        </a>
-        <a class="blog-container" href="/blog/html-css.html">
-          <div class="blog-header">
-            <h3 class="blog-title">Technical - CSS Concepts</h3>
-            <h4 class="blog-date">dd/ww/yyyy</h4>
-          </div>
-          <div class="blog-content style-3">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat cupiditate dolorum aliquam dolore! Expedita provident quibusdam amet ab quas aut fugit eveniet praesentium velit dolores ex harum eligendi, perspiciatis deleniti.
-            </p>
-          </div>
-        </a>
-      </section>
-    </main>
-    <footer class="footer">
-      temp footer. <br />
-      all rights reserved until weaponised
-    </footer>
-  </body>
+        <section class="blog-content style-1">
+          <p>
+            The Story of Te Houtaewa<br />Te Houtaewa was the fastest runner
+            of his day and playedmany pranks on his peoples enemies. One
+            morning his mother wanted kumara for the hangi(earth oven) and
+            asked Te Houtaewa to go to the gardens at Te Kao, a short
+            distanceaway. He agreed to fetch the kumara and told his mother to
+            prepare the hangi ......
+          </p>
+        </section>
+      </a>
+      <a class="blog-container" href="/blog/html-css.html">
+        <div class="blog-header">
+          <h3 class="blog-title">Technical - CSS Concepts</h3>
+          <h4 class="blog-date">04/09/2025</h4>
+        </div>
+        <section class="blog-content style-2">
+          <p>
+            Relative, absolute, and fixed positioning are all ways that CSS can tell the webbrowser how to place the element on the screen. This is especially useful for creatinga good layout for your webpage, or positioning sub-UI (dropdown menus, etc) ......
+          </p>
+        </section>
+      </a>
+      <a class="blog-container" href="/blog/identity-values.html">
+        <div class="blog-header">
+          <h3 class="blog-title">Indentity & Values</h3>
+          <h4 class="blog-date">05/09/2025</h4>
+        </div>
+        <section class="blog-content style-3">
+          <p>
+            Struggling to think of any significant ethical decisions I have made. I think mydecision to stop eating meat is the largest.<br> It's not something I am extremelypressed about, and is not because I am against all meat eating. I just feel, and amaware, of how the majority of meat and animal biproducts are created, and theconsequences of those things. I hope that the world can move towards more sustainable,and caring (if you can ever call it that) raising and consumption of animals ......
+          </p>
+        </section>
+      </a>
+      <a class="blog-container" href="/blog/learning-plan.html">
+        <div class="blog-header">
+          <h3 class="blog-title">Learning Plans</h3>
+          <h4 class="blog-date">03/09/2025</h4>
+        </div>
+        <section class="blog-content style-1">
+          <p>
+            I would like to be a developer, someone who understands what that means, and iscapable of creating anythingUltimately, creation is always my end goal. Being able tounderstand things at a fundamental level iimportant to me, and I think important inthe current market, with A.I. being so fucking rampant, deep <b><i>understanding</i><b> is crucial in creating and keeping a career in this field ......
+          </p>
+        </section>
+      </a>
+    </div>
+  </main>
+  <footer class="footer">
+    temp footer. <br>
+    all rights reserved until weaponised
+  </footer>
+</body>
 </html>

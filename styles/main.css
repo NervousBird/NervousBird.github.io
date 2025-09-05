@@ -192,6 +192,7 @@ section {
 
 /* Technical CSS HTML */
 
+.blog-title,
 .technical-title {
   display: flex;
   flex-direction: column;
@@ -239,11 +240,13 @@ section {
   gap: 30px;
 }
 
+.blog-container:nth-child(odd),
 .technical-content section:nth-child(odd) {
   position: relative;
   right: 20px;
 }
 
+.blog-container:nth-child(even),
 .technical-content section:nth-child(even) {
   position: relative;
   left: 20px;
@@ -325,14 +328,21 @@ section {
   flex-wrap: wrap;
 }
 
-.blog-item img {
-  outline: 2px solid var(--color-font);
-  border-radius: 5px;
-  margin: 1rem;
-  height: auto;
-  max-width: 100%;
+.blog-item-img {
+  display: flex;
+  justify-content: center;
+  height: 0px;
 }
 
+.blog-item img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  bottom: 80px;
+}
 
 .style-1 {
   background-color: var(--color-light-blue);
