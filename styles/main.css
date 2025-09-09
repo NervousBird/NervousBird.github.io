@@ -359,6 +359,68 @@ section {
   background-color: var(--color-light-orange);
 }
 
+
+/* Examples for Technical Blog */
+
+.example-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.example-inputs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.example-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.example-input input {
+  max-width: 40px;
+  border-radius: 5px;
+  text-align: end;
+}
+
+.example-graphic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-orange);
+  border: 2px solid var(--color-font);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  box-shadow: 0px 0px 0px 0px;
+  left: 0px !important;
+}
+
+.box-absolute,
+.box-placeholder {
+  border: 2px solid var(--color-font);
+  border-radius: 10px;
+  background-color: var(--color-green);
+  width: 80px;
+  height: 80px;
+}
+
+.box-absolute {
+  background-color: var(--color-pink);
+}
+
+
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
   .navbar-responsive-dropdown {
