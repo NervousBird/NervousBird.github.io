@@ -13,6 +13,7 @@
   --color-pink: #ff93ab;
   --color-light-blue: #aaceeb;
   --color-blue: #5e9cee;
+  --color-dark-blue: #1c4eb9;
   --color-light-green: #b5e0c7;
   --color-green: #64eb9c;
 
@@ -66,6 +67,11 @@ nav img {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark-blue);
 }
 
 nav a {
@@ -207,7 +213,7 @@ section {
   background-color: var(--color-orange);
   border-radius: 10px;
   padding: 40px 20px 40px 20px;
-  margin: 20px 20px 40px 20px;
+  margin: 20px 20px 60px 20px;
   max-width: 1200px;
 }
 
@@ -227,21 +233,6 @@ section {
   height: 130px;
   width: 130px;
   bottom: 120px;
-}
-
-.rats-peas {
-  height: 120px !important;
-  width: 240px !important;
-}
-
-.rat-grass {
-  height: 130px !important;
-  width: 220px !important;
-}
-
-.tall {
-  height: 150px !important;
-  width: 130px !important;
 }
 
 .technical-content {
@@ -287,6 +278,7 @@ section {
   max-width: 100%;
 }
 
+.blog-links,
 .technical-links {
   background-color: var(--color-light-green);
   display: flex;
@@ -298,10 +290,12 @@ section {
   margin: 30px;
 }
 
+.blog-links ul,
 .technical-links ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 600px;
   gap: 30px;
 }
 
@@ -370,6 +364,27 @@ section {
 
 .style-4 {
   background-color: var(--color-light-orange);
+}
+
+/* Image variations */
+.rats-peas {
+  height: 120px !important;
+  width: 240px !important;
+}
+
+.rat-grass {
+  height: 130px !important;
+  width: 220px !important;
+}
+
+.rat-nap {
+  bottom: 110px !important;
+}
+
+.rat-berry {
+  bottom: 110px !important;
+  height: 140px !important;
+  width: 140px !important;
 }
 
 /* widescreen displays */
