@@ -2,6 +2,7 @@
 
 :root {
   font-family: 'Sour Gummy', sans-serif;
+  font-size: 18px;
   color: var(--color-font);
 
   --color-font: #1a1513;
@@ -169,7 +170,7 @@ ul {
 }
 
 /* Blog */
-.blog-container {
+.blog-link-container {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -179,29 +180,39 @@ ul {
   transition: all .1s ease-in-out;
 }
 
-.blog-container:hover {
+.blog-link-container:hover {
   cursor: pointer;
   scale: 1.03;
   transition: all .1s ease-in-out;
 }
 
-.blog-header {
+.blog-link-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.blog-date,
-.blog-title {
+.blog-link-date,
+.blog-link-title {
   padding: 0px;
   margin: 0px;
 }
 
-.blog-content {
+.blog-link-content {
   border-radius: 10px;
   padding: 20px 15px 25px 15px;
   margin: 0px;
+}
+
+.blog-link-container:nth-child(odd) {
+  position: relative;
+  right: 20px;
+}
+
+.blog-link-container:nth-child(even) {
+  position: relative;
+  left: 20px;
 }
 
 /* Technical CSS HTML */
