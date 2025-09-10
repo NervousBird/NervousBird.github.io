@@ -123,6 +123,14 @@ section {
   box-shadow: 1px 2px 8px 0px #57190020;
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 30px;
+}
+
 /* Specific Changes */
 
 .container {
@@ -288,15 +296,6 @@ section {
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
-}
-
-.blog-links ul,
-.technical-links ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 600px;
-  gap: 30px;
 }
 
 /* Blog Generic */
