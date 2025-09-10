@@ -113,6 +113,7 @@ footer {
   flex-shrink: 1;
   background-color: var(--color-light-pink);
   padding: 10px;
+  margin-top: 40px;
 }
 
 p {
@@ -461,6 +462,91 @@ ul {
   bottom: 110px !important;
   height: 140px !important;
   width: 140px !important;
+}
+
+.raccoon_gorgeous {
+  height: 140px !important;
+  width: 180px !important;
+}
+
+.pigeon_1 {
+  height: 100px !important;
+  width: 150px !important;
+  bottom: 95px !important;
+}
+.pigeon_2 {
+  height: 140px !important;
+  width: 140px !important;
+  bottom: 120px !important;
+}
+.pigeon_3 {
+  height: 170px !important;
+  width: 110px !important;
+}
+.pigeon_4 {
+  height: 140px !important;
+  width: 130px !important;
+}
+.pigeon_5 {
+  height: 130px !important;
+  width: 130px !important;
+  bottom: 105px !important;
+}
+.pigeon_6 {
+  height: 130px !important;
+  width: 130px !important;
+}
+.pigeon_7 {
+  height: 120px !important;
+  width: 170px !important;
+  bottom: 110px !important;
+}
+.pigeon_8 {
+  height: 160px !important;
+  width: 120px !important;
+}
+.pigeon_9 {
+  height: 130px !important;
+  width: 130px !important;
+}
+.pigeon_6 {
+  height: 130px !important;
+  width: 130px !important;
+}
+
+.cat_1 {
+  height: 130px !important;
+  width: 180px !important;
+  bottom: 90px !important;
+}
+.cat_2 {
+  height: 140px !important;
+  width: 140px !important;
+  bottom: 120px !important;
+}
+.cat_3 {
+  height: 130px !important;
+  width: 180px !important;
+}
+.cat_4 {
+  height: 120px !important;
+  width: 150px !important;
+  bottom: 115px !important;
+}
+.cat_5 {
+  height: 130px !important;
+  width: 140px !important;
+  bottom: 105px !important;
+}
+.cat_6 {
+  height: 110px !important;
+  width: 140px !important;
+  bottom: 110px !important;
+}
+.cat_7 {
+  height: 130px !important;
+  width: 130px !important;
+  bottom: 125px !important;
 }
 
 /* widescreen displays */
