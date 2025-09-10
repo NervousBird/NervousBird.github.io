@@ -1,22 +1,43 @@
+// --- Relative --- //
+const relativeBox = document.querySelector('.box-relative')
+
+relativeBox.style.top = '0px'
+relativeBox.style.left = '0px'
+
+const UpdateRelativeExample = () => {
+  if (document.querySelector('#relative').checked) {
+    relativeBox.style.position = 'relative'
+  } else {
+    relativeBox.style.position = 'static'
+  }
+  relativeBox.style.top = document.querySelector('#relative-top').value + 'px'
+  relativeBox.style.left = document.querySelector('#relative-left').value + 'px'
+}
+
+document
+  .querySelector('.relative-inputs')
+  .addEventListener('input', (event) => {
+    UpdateRelativeExample()
+  })
+
+// --- Absolute --- //
 const absoluteBox = document.querySelector('.box-absolute')
-const absoluteToggle = document.querySelector('#absolute')
-const absoluteTop = document.querySelector('#absolute-top')
-const absoluteLeft = document.querySelector('#absolute-left')
-const absoluteForm = document.querySelector('.absolute-inputs')
 
 absoluteBox.style.top = '0px'
 absoluteBox.style.left = '0px'
 
 const UpdateAbsoluteExample = () => {
-  if (absoluteToggle.checked) {
+  if (document.querySelector('#absolute').checked) {
     absoluteBox.style.position = 'absolute'
   } else {
     absoluteBox.style.position = 'static'
   }
-  absoluteBox.style.top = absoluteTop.value + 'px'
-  absoluteBox.style.left = absoluteLeft.value + 'px'
+  absoluteBox.style.top = document.querySelector('#absolute-top').value + 'px'
+  absoluteBox.style.left = document.querySelector('#absolute-left').value + 'px'
 }
 
-absoluteForm.addEventListener('input', (event) => {
-  UpdateAbsoluteExample()
-})
+document
+  .querySelector('.absolute-inputs')
+  .addEventListener('input', (event) => {
+    UpdateAbsoluteExample()
+  })

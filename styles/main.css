@@ -413,6 +413,7 @@ ul {
   left: 0px !important;
 }
 
+.box-relative,
 .box-absolute,
 .box-placeholder {
   border: 2px solid var(--color-font);
@@ -422,6 +423,7 @@ ul {
   height: 80px;
 }
 
+.box-relative,
 .box-absolute {
   background-color: var(--color-pink);
 }
