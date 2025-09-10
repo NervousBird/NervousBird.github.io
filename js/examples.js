@@ -41,3 +41,23 @@ document
   .addEventListener('input', (event) => {
     UpdateAbsoluteExample()
   })
+
+// --- Fixed --- //
+const fixedBox = document.querySelector('.box-fixed')
+
+fixedBox.style.top = '0px'
+fixedBox.style.left = '0px'
+
+const UpdateFixedExample = () => {
+  if (document.querySelector('#fixed').checked) {
+    fixedBox.style.position = 'fixed'
+  } else {
+    fixedBox.style.position = 'static'
+  }
+  fixedBox.style.top = document.querySelector('#fixed-top').value + 'px'
+  fixedBox.style.left = document.querySelector('#fixed-left').value + 'px'
+}
+
+document.querySelector('.fixed-inputs').addEventListener('input', (event) => {
+  UpdateFixedExample()
+})
