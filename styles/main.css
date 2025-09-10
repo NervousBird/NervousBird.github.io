@@ -13,6 +13,7 @@
   --color-pink: #ff93ab;
   --color-light-blue: #aaceeb;
   --color-blue: #5e9cee;
+  --color-dark-blue: #1c4eb9;
   --color-light-green: #b5e0c7;
   --color-green: #64eb9c;
 
@@ -68,6 +69,11 @@ nav img {
   gap: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-dark-blue);
+}
+
 nav a {
   text-decoration: none;
   font-family: "Gochi Hand";
@@ -115,6 +121,14 @@ p {
 
 section {
   box-shadow: 1px 2px 8px 0px #57190020;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 30px;
 }
 
 /* Specific Changes */
@@ -192,6 +206,7 @@ section {
 
 /* Technical CSS HTML */
 
+.blog-title,
 .technical-title {
   display: flex;
   flex-direction: column;
@@ -201,34 +216,31 @@ section {
   margin: 30px 30px 70px 30px;
 }
 
-/* .technical-title img {
-  position: relative;
-  width: 200px;
-  top: -30px;
-} */
-
+.blog-summary,
 .technical-summary {
   background-color: var(--color-orange);
   border-radius: 10px;
-  padding: 20px 20px 40px 20px;
-  margin: 20px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
+  margin: 20px 20px 60px 20px;
   max-width: 1200px;
 }
 
+.blog-summary-img,
 .technical-summary-img {
   display: flex;
   justify-content: center;
   height: 0px;
 }
 
+.blog-summary img,
 .technical-summary img {
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 120px;
-  width: 150px;
-  bottom: 80px;
+  height: 130px;
+  width: 130px;
+  bottom: 120px;
 }
 
 .technical-content {
@@ -274,6 +286,7 @@ section {
   max-width: 100%;
 }
 
+.blog-links,
 .technical-links {
   background-color: var(--color-light-green);
   display: flex;
@@ -285,13 +298,6 @@ section {
   margin: 30px;
 }
 
-.technical-links ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 /* Blog Generic */
 
 .blog-content {
@@ -299,7 +305,7 @@ section {
   flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-  gap: 30px;
+  gap: 80px;
 }
 
 .blog-content section:nth-child(odd) {
@@ -315,7 +321,7 @@ section {
 .blog-item {
   background-color: var(--color-orange);
   border-radius: 10px;
-  padding: 10px 10px 20px 10px;
+  padding: 40px 10px 20px 10px;
   max-width: 800px;
 }
 
@@ -338,9 +344,9 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 150px;
-  width: 150px;
-  bottom: 80px;
+  height: 130px;
+  width: 130px;
+  bottom: 120px;
 }
 
 .style-1 {
@@ -420,6 +426,27 @@ section {
   background-color: var(--color-pink);
 }
 
+
+/* Image variations */
+.rats-peas {
+  height: 120px !important;
+  width: 240px !important;
+}
+
+.rat-grass {
+  height: 130px !important;
+  width: 220px !important;
+}
+
+.rat-nap {
+  bottom: 110px !important;
+}
+
+.rat-berry {
+  bottom: 110px !important;
+  height: 140px !important;
+  width: 140px !important;
+}
 
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
