@@ -61,3 +61,13 @@ const UpdateFixedExample = () => {
 document.querySelector('.fixed-inputs').addEventListener('input', (event) => {
   UpdateFixedExample()
 })
+
+// --- CUPCAKE MACHINE! --- //
+
+let cupcakestack = []
+
+for (let cupcake = 0; cupcake > cupcakestack.length; cupcake++) {
+  if (cupcake != icing) {
+    add icing
+  }
+}
