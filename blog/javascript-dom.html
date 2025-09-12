@@ -42,6 +42,15 @@
     <div class="blog-title">
       <h2>What?</h2>
     </div>
+    <section class="technical-summary">
+      <div class="technical-summary-img">
+        <img class="raccoon_gorgeous" src="/images/PigeonSquare_09.png" alt="">
+      </div>
+      <h3>Before we begin</h3>
+      <p>
+        Let's have a look at the basics of Javascript. The things you will <i><b>need</b></i> to know and understand to have success. It's very different from both <b>HTML</b> and <b>CSS</b>, and can be quite difficult when you're first beggining. I'll be avoiding direct examples, and using a bakery analogy to explain the concepts, hopefull this will make it easier to understand!
+      </p>
+    </section>
     <div class="blog-content">
       <section class="blog-item style-1">
         <div class="blog-item-img">
@@ -85,7 +94,7 @@
               <div class="handle-css-highlight"></div>
             </div>
           </div>
-          <div class="door-example-container">
+          <div class="door-example-container" style="display: none">
             <div class="door-css-base">
               <div class="door-css-dot1"></div>
               <div class="door-css-dot2"></div>
@@ -102,6 +111,9 @@
               <div class="handle-css-normal"></div>
               <div class="handle-css-highlight"></div>
             </div>
+          </div>
+          <div class="door-example-container">
+            <div class="door-open-base"></div>
           </div>
         </div>
       </section>
@@ -131,6 +143,7 @@
                   <div class="paper-dot-2"></div>
                   <div class="paper-dot-3"></div>
                 </div>
+                <div class="cupcake-icing" hidden></div>
               </div>
               <div class="cupcake-container">
                 <div class="cupcake-top"></div>
@@ -139,6 +152,7 @@
                   <div class="paper-dot-2"></div>
                   <div class="paper-dot-3"></div>
                 </div>
+                <div class="cupcake-icing" hidden></div>
               </div>
               <div class="cupcake-container">
                 <div class="cupcake-top"></div>
@@ -147,12 +161,14 @@
                   <div class="paper-dot-2"></div>
                   <div class="paper-dot-3"></div>
                 </div>
+                <div class="cupcake-icing" hidden></div>
               </div>
               <div class="icing-container">
-                <div></div>
+                <div class="icing-base"></div>
+                <div class="icing-tip"></div>
               </div>
             </div>
-            <div class="iced-cupcakes">
+            <!-- <div class="iced-cupcakes">
               <div class="icing-container">
                 <div class="cupcake-top"></div>
                 <div class="cupcake-paper">
@@ -162,14 +178,63 @@
                 </div>
                 <div class="cupcake-icing"></div>
               </div>
-            </div>
+            </div> -->
           </div>
           <p>
             Now let's make a simple <i>"recipe"</i>, or a loop, so we can get all our cupcakes iced!
+          </p><br>
+          <span class="technical-blurb-images">
+            <img class="technical-prievew-image" src="/images/preview_Loopies.png" alt="">
+          </span><br>
+          <p>
+            Now, this isn't <i><b>exactly</b></i> correct code, but the actual code is very similar. It's basic, but it works!<br>
+            Simply click the icing to ice the cupcakes!
           </p>
           <div class="bakery-visuals-container">
-            <!-- Cupcakes, iced and not iced groups -->
-             <!-- Not about using Javascript to get this all done -->
+            <div class="plain-cupcakes" id="cupcakes">
+              <div class="cupcake-container">
+                <div class="cupcake-top"></div>
+                <div class="cupcake-paper">
+                  <div class="paper-dot-1"></div>
+                  <div class="paper-dot-2"></div>
+                  <div class="paper-dot-3"></div>
+                </div>
+                <div class="cupcake-icing" hidden id="cupcake-icing"></div>
+              </div>
+              <div class="cupcake-container">
+                <div class="cupcake-top"></div>
+                <div class="cupcake-paper">
+                  <div class="paper-dot-1"></div>
+                  <div class="paper-dot-2"></div>
+                  <div class="paper-dot-3"></div>
+                </div>
+                <div class="cupcake-icing" hidden id="cupcake-icing"></div>
+              </div>
+              <div class="cupcake-container">
+                <div class="cupcake-top"></div>
+                <div class="cupcake-paper">
+                  <div class="paper-dot-1"></div>
+                  <div class="paper-dot-2"></div>
+                  <div class="paper-dot-3"></div>
+                </div>
+                <div class="cupcake-icing" hidden id="cupcake-icing"></div>
+              </div>
+              <div class="icing-container" id="icing-button">
+                <div class="icing-base"></div>
+                <div class="icing-tip"></div>
+              </div>
+            </div>
+            <!-- <div class="iced-cupcakes">
+              <div class="icing-container">
+                <div class="cupcake-top"></div>
+                <div class="cupcake-paper">
+                  <div class="paper-dot-1"></div>
+                  <div class="paper-dot-2"></div>
+                  <div class="paper-dot-3"></div>
+                </div>
+                <div class="cupcake-icing"></div>
+              </div>
+            </div> -->
           </div>
           <p>
             Perfect! Now we have a delicius treat that we definitely won't eat in a single sitting ...
@@ -189,13 +254,11 @@
           <img class="technical-prievew-image" src="/images/preview_DOM.png" alt="">
         </span><br>
         <p>
-          
+          It can seem overwhelming, but it's simply a hierarchy of things, these things contain other things. Each has their specific purpose, and where you place things is important, but it's really not that complicated. What's important to remember, is that things load in a certain way, top to bottom. Sometimes you'll want something loaded first or last, so be aware. <br><br>
+          Learning to navigate the DOM is important though, as it's how you will be accessing everything with Javascript. If I grab one of the elements, say, then it will also help to remember and be aware of the things beneath it. Since the DOM works in a hierarchy, things bellow that are connected to an element, can also be affected.<br><br>
+          <p style="color: var(--color-font-link)">document.querySelect()</p> is one of a few ways to access items in the DOM, if I were to grab the element a, from the above visual, then I could also have access to the text: <i>"link to cupcakes!"</i> as well as the attribute: <i>link</i>.<br><br>
+          Keep this in mind when working with the DOM!
         </p>
-        <div class="bakery-example-container">
-          <div class="bakery-visuals-container">
-            <!-- hierarchy of basket to muffin to icing or something -->
-          </div>
-        </div>
       </section>
       <section class="blog-item style-1">
         <div class="blog-item-img">
@@ -206,6 +269,9 @@
           <!-- Explain the difference between accessing data from arrays and objects. -->
            Back to our cupcakes to explain this one. An array is just a collection of things, a basket of cupcakes, for example, while an object is a singular thing with a bunch of <i><b>properties</b></i>. They are very different, and both very important. Having a lovely <i><b>array</b></i> (basket) of muffins is lovely, but with that, all we know is that we have a basket, and it has cupcakes. But when we take a singular cupcake as an <i><b>object</b></i>, then we can get a hold of all it's juicy <i><b>properties</b></i>, think of these as info, icing, the flour used, the size, how soft it is, etc.
         </p>
+        <span class="technical-blurb-images">
+          <img class="technical-prievew-image" src="/images/preview_ObjectArray.png" alt="">
+        </span><br>
       </section>
       <section class="blog-item style-2">
         <div class="blog-item-img">
@@ -216,6 +282,9 @@
           <!-- Explain what functions are and why they are helpful. -->
            Functions are basically specific baking instructions! They are usually very simple as well, as computers need to be told <i><b>everything</b></i>. You can think of something like <b>stirring</b> to be a function, or as in the example above; <b>icing</b>. It's a very specific task that can be done to ... something!
         </p>
+        <span class="technical-blurb-images">
+          <img class="technical-prievew-image" src="/images/preview_function.png" alt="">
+        </span><br>
         <div class="bakery-example-container">
           <p>
             <!-- Step by step example of a function -->
@@ -230,7 +299,19 @@
             <!-- Icing visual -->
           </div>
           <p>
-            Simple, right?
+            Simple, right?<br><br>
+            Usually Javascript, like a bakery, will have <i><b>a lot</b></i> of little functions, and it's best to keep them simple! It makes understanding and following easier, to make some cupcakes, we may have some functions like:
+            <ul>
+              <li><b>weigh ingredients</b></li> 
+              <li><b>mix ingredients</b></li>
+              <li><b>put in tray</b></li>
+              <li><b>heat oven</b></li>
+              <li><b>bake</b></li>
+              <li><b>take out cupcakes</b></li>
+              <li><b>let cool off</b></li>
+              <li><b>ice cupcakes</b></li>
+              <li>and of course <b>eat cupcakes</b></li>
+            </ul>  Imagine writing out very explicit steps that you would need to do for each of these functions, and you're basically coding already!
           </p>
         </div>
       </section>
@@ -240,5 +321,6 @@
     temp footer. <br />
     all rights reserved until weaponised
   </footer>
+  <script src="/js/cupcakes.js" type="text/javascript"></script>
 </body>
 </html>
