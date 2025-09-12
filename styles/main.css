@@ -840,7 +840,33 @@ ul {
   
 /* tablets */
 @media only screen and (max-width: 919px) {
+  .technical-summary img {
+    bottom: 100px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-dropdown-icon img {
+    
+    position: relative;
+    width: 40px;
+    left: -10px;
+    /* top: 10px; */
+  }
   .navbar-responsive-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-responsive-dropdown ul {
+    display: none;
+  }
+  .navbar-links {
     display: none;
   }
 }
@@ -853,6 +879,7 @@ ul {
   nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
