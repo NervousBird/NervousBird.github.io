@@ -10,3 +10,14 @@ document.getElementById('icing-button').addEventListener('click', (event) => {
     alert('The cupcakes are all iced!')
   }
 })
+
+// --- Door --- //
+document.getElementById('closedDoor').addEventListener('click', (event) => {
+  document.getElementById('openDoor').style.display = 'flex'
+  document.getElementById('closedDoor').style.display = 'none'
+})
+
+document.getElementById('openDoor').addEventListener('click', (event) => {
+  document.getElementById('closedDoor').style.display = 'flex'
+  document.getElementById('openDoor').style.display = 'none'
+})
