@@ -32,52 +32,114 @@
     </div>
     <section class="technical-summary">
       <div class="technical-summary-img">
-        <img class="raccoon_gorgeous" src="/images/PigeonSquare_09.png" alt="">
+        <img class="cat_1" src="/images/Cat_1.png" alt="">
       </div>
       <h3>What this blog is gonna be about</h3>
       <p>
+        I'm going to talk about my unfinished Music Machine "app" that I was creating using Tone.js. This was going to be a simple way to create music, using different instruments, it started out as just a drum machine, but grew a lot larger in scale, as tends to happen with these things. I eventually ended up with something that could play a basic piano, be affected by distortion, reverb, or other effects, and had a built in Bach Prelude piece that I had written.
+        <br>Most importantly, it had a technical issue that I struggled with, and managed to fix, and can now use in future projects to save a lot of time! And that is: dropdown menus. Extremely common, extremely useful, and tedious to setup. But during my time making this app, I had to figure out a way to <i><b>generate</b></i> dropdown menus, and once I had this figured out, I could now generate dropdown menus anywhere, anytime.
       </p>
     </section>
     <div class="blog-content">
       <section class="blog-item style-1">
         <div class="blog-item-img">
-          <img class="pigeon_1" src="/images/PigeonSquare_01.png" alt="">
+          <img class="cat_2" src="/images/Cat_2.png" alt="">
         </div>
         <h4>The problem</h4>
         <p>
+          Creating a music machine that lets you change instruments, effects, tempos and timings, and various other aspects means that you can't just create a static HTML framework and be done. Almost all the content created could be deleted, added to, and edited, which meant that it had to all be done via JS.
         </p><br>
         <span class="technical-blurb-images">
+          <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns.png" alt="">
+        </span><br>
+        <p>
+          This meant that, not only did I need to create the <i><b>elements</b></i> and <i><b>innerHTML</b></i> for each and every dropdown, I had to create the <i><b>content</b></i> of each one. And to make matters worse, I had to make them all <i><b>function!</b></i><br>
+          This meant adding <i><b>event listeners</b></i> on the fly, updating them so they worked, and making sure that the dropdown menus closed when you clicked somewhere else!
+        </p><br>
+        <span class="technical-blurb-images">
+          <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns_2.png" alt="">
         </span><br>
       </section>
       <section class="blog-item style-2">
         <div class="blog-item-img">
-          <img class="pigeon_5" src="/images/PigeonSquare_05.png" alt="">
+          <img class="cat_4" src="/images/Cat_4.png" alt="">
         </div>
         <h4>How I fixed it</h4>
         <p>
+          <b>Lots of googling and asking LLM</b>. I was on message boards a lot, I was writing psuedocode, and I was just <i>trying things</i>. I had to generate arrays in JS that would grab the elements I wanted in HTML, and apply the correct code to make the dropdown menu function. This meant a clever use of class names, that would universally apply, as well as navigating through parent and child elements.<br>
+          This was code that I found googling, and from this experience, I really found that message boards were the best place to look! It's helpful to have a back and forth between people, as well as various solutions!
         </p><br>
         <span class="technical-blurb-images">
+          <figure>
+            <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns_3.png" alt="">
+            <figcaption>Show and hide function for any inputted button</figcaption>
+          </figure>
+        </span><br>        
+        <p>
+          This will allow me to grab what ever I want to have dropdown functionality, and apply that. Simply need to input the ID of the button that will have the dropdown. But this isn't enough! I also want the menu to disappear if I click anywhere <i><b>else</b></i>. So we have to write a function to do that: Grab the event, grab the window, make a check to see if a 'click' action on the mouse is targetting the dropdown, or not!
+        </p><br>
+        <h4>Why Is it important to have various solutions?</h4>
+        <p>
+          In my opinion, this helps to <i><b>understand</b></i> what the problems are, and what the solutions <i>might</i> be. Problem solving for me, is:<br>
+          <b>What do I have?</b>, <b>What do I want to have?</b>, <b>How do I achieve that?</b><br>
+          The first two seem simple, right? I have a menu, I want it to appear and disappear when certain things are clicked. But looking at how other people have answered the last question, can change the first two. I have a menu in HTML, well, maybe that's not what I want to have, maybe I want to have a menu in JS. Suddenly the simple question, <i><b>What do I have?</b></i> Isn't so simple.
+        </p><br>
+        <p>
+          Seeing others approach problems <i><b>from the beginning</b></i> helps you broaden your thinking, it's not just <i><b>How do I get from A to B?</b></i>, sometimes the <b>A</b> isn't even where you want to start.
+        </p><br>
+        <span class="technical-blurb-images">
+          <figure>
+            <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns_4.png" alt="">
+            <figcaption>Hide all dropdowns when not clicking on them</figcaption>
+          </figure>
+        </span><br>
+        <h4>The next problem...</h4>
+        <p>
+          We need <i><b>content</b></i>. The examples bellow are not from my music machine, but from this blog actually! But the Music Machine had the same issue: <i>I want to be able to change the content easily</i>. No HTML, the content needs to be easy to edit, and able to be created at will, I don't want to have to create HTML for ever possible situation, and then just hide and show.
+        </p><br>
+        <p>
+          The fix to this problem is actually something that the <i><b>Kata</b></i> challenges had you work on (if you did those), and brings me to my next, and maybe the most fun problem solving technique: <strong>DO</strong>.
+          <br>Challenge sites, small silly apps, or active courses, are great ways to learn problem solving and solutions. There's a million ways to do things, and the only way to know which is best is by trying them.
+        </p><br>
+        <p>
+          We know how to google, we know how to ask questions. These are easy skills to acquire, LLM's exist (but they're stupid). The best way I have found to solve problems, is to just make things. You never know what solutions you will find when doing something. 
+        </p><br>
+        <span class="technical-blurb-images">
+          <figure>
+            <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns_5.png" alt="">
+            <figcaption>Dropdown array for the name and link</figcaption>
+          </figure>
+        </span><br>
+        <p>
+          I figured out these solutions while creating other things. In fact, I may not have even realised this was a solution if I hadn't been doing other things. I could have started at <i><b>the wrong A</b></i>. The chances are, that there's an even better solution out there, I may not be able to find it either by trying to problem solve this. I could, however, realise while solving another problem, that it also solves this one.
+        </p><br>
+        <span class="technical-blurb-images">
+          <figure>
+            <img class="technical-prievew-image" src="/images/dropdown-previews/preview_dropdowns_6.png" alt="">
+            <figcaption>Generate dropdown content using an array and object</figcaption>
+          </figure>
         </span><br>
       </section>
       <section class="blog-item style-3">
         <div class="blog-item-img">
-          <img class="pigeon_10" src="/images/PigeonSquare_10.png" alt="">
+          <img class="cat_3" src="/images/Cat_3.png" alt="">
         </div>
         <h4>Is it easy?</h4>
         <p>
-        </p>        
-        <span class="technical-blurb-images">
-        </span><br>
+          Is problem solving easy? Well ... no, but yes. The lucky thing is, almost every problem you will come across has probably been solved before. There's a world out there, with billions of people, years of history, there are a lot of solved problems. The difficult bit is figuring out if the solution is the correct one <i>for you</i>.
+        </p><br>
+        <p>
+          Psuedocode, rubber ducky, error messages, console.log, google, asking others, even just trying things. I'm comfortable with them all, as I think anyone needs to be. I think the most important thing is to just, <i><b>keep your mind open</b></i>, and <i><b>understand it fundamentally</b></i>. Anyone of these methods could lead to a solution, but I don't think just finding a solution is truly good problem solving. It needs to be <b>understood</b>, regardless of context.
+        </p><br>
       </section>
       <section class="blog-item style-1">
         <div class="blog-item-img">
-          <img class="pigeon_6" src="/images/PigeonSquare_06.png" alt="">
+          <img class="cat_7" src="/images/Cat_7.png" alt="">
         </div>
         <h4>I can do it myself!! (I swear)</h4>
         <p>
+          Referring to the above blurb, while you might find a solution through Google, Psuedocode, or the rubber ducky method, you may not actually <b>understand</b> it. Which is the truly important part. I know that I had lots of struggles with asking people for help, especially during my previous course, as it was all in Dutch. I felt uncomfortable with the communication, but letting that stop me was silly, and damaging. There was always a lot more to learn, and a lot more to understand, by just asking someone. In the future I will be actively trying to engage with others more, especially with problem solving. Who knows? Maybe their A is a better starting point.
         </p><br>
-        <span class="technical-blurb-images">
-        </span><br>
       </section>
     </div>
   </div>

@@ -82,7 +82,6 @@ const generateDropdownContent = (array, list) => {
     let listLink = document.createElement('a')
     listLink.href = object.link
     listLink.innerHTML = object.name
-    console.log(listItem)
     listItem.appendChild(listLink)
     parent.appendChild(listItem)
   })

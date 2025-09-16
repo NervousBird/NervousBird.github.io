@@ -17,6 +17,9 @@
   --color-dark-blue: #1c4eb9;
   --color-light-green: #b5e0c7;
   --color-green: #64eb9c;
+  --color-light-purple: #d7c2ff;
+  --color-yellow: #ffe23d;
+  --color-dark-pink: #db2754;
 
 }
 
@@ -27,6 +30,8 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 4rem;
   margin: 30px;
+  /* color: var(--color-yellow);
+  text-shadow: 3px 3px 1px var(--color-dark-pink); */
 }
 
 h2 {
@@ -70,10 +75,6 @@ nav img {
   gap: 30px;
 }
 
-.blog-posts {
-
-}
-
 .dropdown-button {
   font-family: 'Gochi Hand';
   font-size: 1.3rem;
@@ -109,16 +110,11 @@ nav a {
   font-family: "Gochi Hand";
   color: var(--color-font-link);
   font-size: 1.3rem;
-
-  /* background-color: var(--color-pink);
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px; */
 }
 
 nav a:hover {
   color: var(--color-pink);
 }
-
 
 /*  */
 header {
@@ -160,6 +156,12 @@ ul {
   flex-wrap: wrap;
   max-width: 600px;
   gap: 30px;
+}
+
+figcaption {
+  font-size: .9rem;
+  color: var(--color-font-light);
+  justify-self: center;
 }
 
 /* Specific Changes */
