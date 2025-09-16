@@ -70,6 +70,35 @@ nav img {
   gap: 30px;
 }
 
+.blog-posts {
+
+}
+
+.dropdown-button {
+  font-family: 'Gochi Hand';
+  font-size: 1.3rem;
+  color: var(--color-font-link);
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-button:hover {
+  cursor: pointer;
+  color: var(--color-pink);
+}
+
+.dropdown {
+  display: none;
+  background-color: var(--color-light-green);
+  border-radius: 10px;
+  position: absolute;
+  top: 35px;
+  z-index: 1;
+  list-style-type: none;
+  padding: 10px 15px 10px 15px;
+  margin-left: -80px;
+}
+
 a {
   text-decoration: none;
   color: var(--color-dark-blue);
