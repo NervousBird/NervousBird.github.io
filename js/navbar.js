@@ -70,8 +70,12 @@ let blogDropdown = [
     link: '/blog/problem-solving.html',
   },
   {
-    name: 'Test Link',
-    link: '#',
+    name: 'Neuroplasticity',
+    link: '/blog/neuroplasticity.html',
+  },
+  {
+    name: 'Te Whare Tapa Wha',
+    link: '/blog/te-whare-tapa-wha.html',
   },
 ]
 
