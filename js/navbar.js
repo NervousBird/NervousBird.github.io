@@ -77,6 +77,10 @@ let blogDropdown = [
     name: 'Te Whare Tapa Wha',
     link: '/blog/te-whare-tapa-wha.html',
   },
+  {
+    name: 'Foundations Reflection',
+    link: '/blog/foundations-reflection.html',
+  },
 ]
 
 const generateDropdownContent = (array, list) => {
